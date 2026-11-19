@@ -1,3 +1,4 @@
+
 namespace Domain.Common;
 
 public class Result<T>
@@ -40,5 +41,8 @@ public class Result
 public record Error(string Code, string Message)
 {
     public static Error NotFound(string code, string message) => new(code, message);
+
     public static Error Validation(string code, string message) => new(code, message);
+
+    public static Error Conflict(string code, string message) => new(code, message);
 }

@@ -6,3 +6,5 @@
 # React generated files
 frontend/node_modules/
 frontend/dist/
+# SQLite database
+backend/Api/carshow.db
